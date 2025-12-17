@@ -1,8 +1,8 @@
 import axios from 'axios';
 import fs from 'fs';
 
-const API_URL = "https://router.huggingface.co/hf-inference/models/Salesforce/blip-image-captioning-base";
-const API_KEY = "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";
+const API_URL = "https://dummyurl.com";
+const API_KEY = "dummykey";
 
 export async function imageToText(imagePath) {
     const image = fs.readFileSync(imagePath); // Read image file
