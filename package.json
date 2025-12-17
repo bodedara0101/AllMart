@@ -1,0 +1,12 @@
+{
+    "name": "allmart",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "npm install --prefix client && npm run build --prefix client",
+      "start": "npm install --prefix app && node app/index.js"
+    },
+    "engines": {
+      "node": "18.x"
+    }
+  }
+  

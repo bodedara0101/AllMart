@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    scroll-behavior: smooth;
+}
+* > *{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.chev{
+    position: relative;
+  }
+  .chev::before,
+  .chev::after{
+    position: absolute;
+    content: 'New';
+    @apply text-red-500 text-xs content-center bg-gray-200 p-3 flex flex-col justify-center items-center rounded-full font-bold right-2;
+    font-size: 7px;
+    width: 2px;
+    height: 2px;
+  }
+
+  .navLink{
+    @apply transition-all duration-1000;
+  }
+  
+.active {
+    @apply text-zinc-100;
+  }
+
+.adminNav.active {
+  position: relative;
+    @apply text-blue-500 bg-gray-100
+}
+
+.adminNav.active::before {
+  content: '';
+  @apply h-10 w-1 absolute bg-blue-500 left-0 top-0 transition-all duration-100
+}
